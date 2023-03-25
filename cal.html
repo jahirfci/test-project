@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <h1>My Calculator</h1>
+    <input type="number" id="firstNumber">
+    <input type="number" id="secondNumber">
+    <input type="text" id="resultDiv">
+
+    <button id="plusBtn">+</button>
+    <button id="minusBtn">-</button>
+    <button id="mulBtn">*</button>
+    <button id="dividBtn">/</button>
+    <button id="reminBtn">%</button>
+
+    <script>
+        var plusBtn = document.getElementById('plusBtn');
+        plusBtn.onclick = function plusFunc() {
+            var firstNumber = Number(document.getElementById('firstNumber').value);
+            var secondNumber = Number(document.getElementById('secondNumber').value);
+            var result = firstNumber + secondNumber;
+
+            var resultDiv = document.getElementById('resultDiv');
+            resultDiv.value = result;
+        }
+
+        var minusBtn = document.getElementById('minusBtn');
+        minusBtn.onclick = function minusFunc() {
+            var firstNumber = Number(document.getElementById('firstNumber').value);
+            var secondNumber = Number(document.getElementById('secondNumber').value);
+            var result = firstNumber - secondNumber;
+
+            var resultDiv = document.getElementById('resultDiv');
+            resultDiv.value = result;
+        }
+    </script>
+</body>
+
+</html>
